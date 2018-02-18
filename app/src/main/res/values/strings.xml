@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">PushNotificationWithFirebase</string>
+    <string name="pref_name">fcm_pref</string>
+    <string name="fcm_token">fcm_token</string>
+
 </resources>
