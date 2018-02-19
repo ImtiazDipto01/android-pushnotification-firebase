@@ -24,7 +24,7 @@ public class VolleySingleTone {
     public RequestQueue getRequestQueue(){
 
         if(requestQueue == null){
-            requestQueue = Volley.newRequestQueue(this.context) ;
+            requestQueue = Volley.newRequestQueue(this.context.getApplicationContext()) ;
         }
         return requestQueue ;
     }

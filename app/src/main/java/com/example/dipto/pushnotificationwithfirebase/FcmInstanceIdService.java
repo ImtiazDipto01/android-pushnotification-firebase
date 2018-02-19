@@ -23,6 +23,7 @@ public class FcmInstanceIdService extends FirebaseInstanceIdService {
         SharedPreferences.Editor editor = sharedPreferences.edit() ;
         editor.putString(Utils.fcm_token, recent_token) ;
         editor.commit() ;
-        Log.d(TAG, recent_token) ;
+        String token = sharedPreferences.getString(Utils.fcm_token, "") ;
+        Log.d(TAG, token) ;
     }
 }
