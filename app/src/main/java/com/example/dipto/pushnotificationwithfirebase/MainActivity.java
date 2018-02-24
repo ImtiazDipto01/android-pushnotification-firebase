@@ -44,11 +44,11 @@ public class MainActivity extends AppCompatActivity {
                 }
 
 
-                /*StringRequest stringRequest = new StringRequest(Request.Method.POST, URL,
+                StringRequest stringRequest = new StringRequest(Request.Method.POST, URL,
                         new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
-
+                                Log.d("onResponse>>>>>>", response) ;
                             }
                         },
                         new Response.ErrorListener() {
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                                 return super.getParams();
                             }
                         };
-                        VolleySingleTone.getInstance(MainActivity.this).addToRequestQueue(stringRequest);*/
+                VolleySingleTone.getInstance(MainActivity.this).addToRequestQueue(stringRequest);
             }
         });
     }
